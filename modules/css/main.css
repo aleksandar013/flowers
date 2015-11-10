@@ -1,0 +1,208 @@
+body {
+    background: rgb(102,139,139); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(102,139,139,1) 0%, rgba(106,160,59,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(102,139,139,1)), color-stop(100%,rgba(106,160,59,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(102,139,139,1) 0%,rgba(106,160,59,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(102,139,139,1) 0%,rgba(106,160,59,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(102,139,139,1) 0%,rgba(106,160,59,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(102,139,139,1) 0%,rgba(106,160,59,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#668b8b', endColorstr='#6aa03b',GradientType=0 ); /* IE6-9 */
+    font-family: 'Roboto', sans-serif;
+    color: #363636;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+#wrapper {
+    width: 970px;
+    border: 5px solid rgba(255,255,255,0.7);
+    background-color: #ffffff;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 25px 10px #2f4f4f;
+    box-shadow: 0 0 15px 0px #2f4f4f;
+}
+img {
+    max-width: 100%;
+}
+p.intro {
+    display: none;
+}
+a:link, a:visited {
+    color: #ad1c1c;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1,h2,h3,h4,h5,h6 {
+    border-bottom: 3px solid #ad1c1c;
+    color: #5d5d5d;
+    margin-bottom: 1.2em;
+}
+#header {
+    background-color: #2f4f4f;
+}
+#nav {
+padding: 8px 0;
+  zoom: 1;
+  width: auto;
+   background-color: #2f4f4f;
+   border-top: 1px solid rgba(255,255,255,0.7);
+}
+#nav:before {
+  content: '';
+  display: block;
+}
+#nav:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#nav ul {
+  list-style-type: none;
+  position: relative;
+  display: block;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #7ab900;
+  zoom: 1;
+}
+#nav ul:before {
+  content: '';
+  display: block;
+}
+#nav ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#nav li {
+  display: block;
+  height: 48.3px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#nav li a {
+  float: left;
+  color: #A79787;
+  text-decoration: none;
+    padding: 10px 15px;
+  font-weight: normal;
+}
+#nav li:hover,
+#nav .active {
+    transition: .3s background-color;
+  text-decoration: none;
+  border-bottom: 2px solid #7ab900;
+}
+#nav li:hover a {
+  color: #fff;
+}
+#nav .active a {
+  color: #fff;
+  font-weight: 700;
+    cursor: default;
+}
+#banner {
+    border-bottom: 2px solid #ffffff;
+}
+#banner img {
+    vertical-align: bottom;
+}
+#main {
+    overflow: hidden;
+    width:auto;
+}
+#main ul {
+    list-style-type: none;
+}
+.block {
+    padding: 0px 10px 0px 15px;
+    width: 635px;
+    float: left;
+}
+.author {
+    margin-top: 15px;
+    float: right;
+    width: 300px;
+    padding: 0 5px 0 0;
+}
+.border {
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1px solid #000000;
+    margin: 10px 0 10px 2px;
+    float: left;
+}
+.border img {
+    vertical-align: bottom;
+}
+.banner {
+    background-image: url("../../img/banner_bottom.jpg");
+    width: 945px;
+    height: 150px;
+
+}
+#footer {
+    clear: both;
+    height: 50px;
+    font-size: 11px;
+    color: #595959;
+    padding: 0 15px;
+}
+p.copyright {
+   text-align: right;
+}
+#btn {
+    padding: 5px;
+    border: 1px solid #363636;
+    border-radius: 3px;
+    color: #363636;
+    text-shadow: #bfbfbf 1px 1px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.author #myDiv {
+    color: #ad1c1c;
+    font-size: 16px;
+    display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #wrapper {
+        width: 600px;
+    }
+    #wrap {
+        display: none;
+    }
+    #wrap img {
+        width: 600px;
+    }
+    .block {
+        /*float: none;*/
+        width: auto;
+    }
+    .author {
+        float: none;
+    }
+}
+@media screen and (max-width: 767px){
+    #wrapper{
+        width: 500px;
+    }
+    #wrap {
+        display: none;
+    }
+    #wrap img {
+        width: 500px;
+    }
+    .block {
+        overflow: hidden;
+        float: none;
+        width: auto;
+    }
+    .author {
+        float: none;
+    }
+}

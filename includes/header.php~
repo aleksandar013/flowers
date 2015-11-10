@@ -1,0 +1,43 @@
+<?php
+if(!defined("FRAMEWORK_LOADED")){
+    die ("Invalid enter!");
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Upoznavanje sa biljkama koje pripadaju grupi vrtnog, sobno-saksijskog i rezanog cveća, morfološke osobine, uslovi gajenja">
+    <title><?php if(isset($_GET['f_id'])){echo "Cvet na dlanu | Opis";} else {echo $page_title;} ?></title>
+<link rel="shortcut icon" type="image/ico" href="img/cvet.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="modules/css/lightbox.css" rel="stylesheet" type="text/css">
+    <link href="modules/css/screen.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="modules/css/main.css">
+    <link rel="stylesheet" href="modules/css/slider.css">
+    <script src="modules/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="modules/js/lightbox.min.js"></script>
+    <script src="modules/js/slider.js"></script>
+    <script src="modules/js/slide.js"></script>
+</head>
+<body>
+<?php include_once("analyticstracking.php"); ?>
+<div id="wrapper">
+    <div id="header">
+        <a href="./"><img src="img/logo.jpg" alt="logo"></a>
+    </div>
+        <div id="nav">
+        <ul>
+            <?php
+            foreach($pages as $k=>$v){
+                if($k==1){
+                    echo "<li><a href='./'>{$v['title']}</a> </li>";
+                } else {
+                    echo "<li><a href='?page={$k}'>{$v['title']}</a> </li>";
+                }
+            }
+            ?>
+        </ul>
+    </div>
+
+

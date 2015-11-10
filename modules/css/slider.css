@@ -1,0 +1,55 @@
+#wrap {
+    height: 394px;
+    width: 960px;
+    position: relative;
+}
+#container {
+    height: 394px;
+    width: 960px;
+    position: relative;
+}
+#img{/*
+    height: 450px;
+    width: 650px;*/
+    position: absolute;
+}
+#left_holder{
+    height: 394px;
+    width: 100px;
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+#right_holder{
+    height: 394px;
+    width: 100px;
+    right: 0px;
+    position: absolute;
+    top:0px;
+}
+#left{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:40%;
+    left: 5px;
+}
+#right{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:40%;
+    right: 5px;
+}
+
+#buttons {
+    position: absolute;
+    left: 450px;
+    bottom: 10px;
+}
+
+#buttons img {
+    float: left;
+    width: 20px;
+    cursor: pointer;
+}
